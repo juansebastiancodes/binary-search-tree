@@ -67,6 +67,7 @@ module.exports = class Tree {
         return this.rootNode.getLeafs();
     }
 
+    // obtain the nodes that are in the last level
     getDeepestNodes() {
         if (!this.rootNode) {
             return null;
@@ -77,6 +78,7 @@ module.exports = class Tree {
         return { deepest: deepestNodes, deph};
     }
 
+    // Get maximum node value from the tree
     getMax() {
         if (this.rootNode == null) {
             return null;
@@ -84,10 +86,11 @@ module.exports = class Tree {
         return this.rootNode.getMax();
     }
 
+    // Get minimum node value from the tree
     getMin() {
         if (this.rootNode == null) {
             return null;
         }
-        return this.rootNode.getMax();
+        return this.rootNode.getMin();
     }
 }

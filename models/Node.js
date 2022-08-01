@@ -32,7 +32,7 @@ module.exports = class Node {
         if (value < this.value && this.leftChild) {
             this.leftChild = this.leftChild.deleteNode(value);
         }
-        if (value > this.value && this.leftChild) {
+        if (value > this.value && this.rightChild) {
             this.rightChild = this.rightChild.deleteNode(value);
         }
         if (this.value === value) {

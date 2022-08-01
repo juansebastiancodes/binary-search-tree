@@ -4,9 +4,14 @@
   "description": "Binary Search Tree",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "mocha test",
     "start": "node index"
   },
   "author": "Juan Codes",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0"
+  }
 }
