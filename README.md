@@ -12,3 +12,4 @@ Binary search tree data structure implemented with all the methods.
 - Add Node
 - Delete Node
 - Leafs
+- Search
